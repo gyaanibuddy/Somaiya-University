@@ -1,0 +1,6 @@
+1. You should contribute at least 2 code-files/journals/blogs etc.
+2. Points that will be considered while validation :
+     a. If contributing a code file you should mention proper problem statement at the start of your file (Comment it)
+     b. Code should not be directly copied from any website like geeksforgeeks, tutorialspoint etc as there will be a plagiarism check for the same.
+     c. Your work should be placed in an appropriate folder and should not change the rest of the directory structure. 
+3. Once all the above factors are verified by our Gyaanibuddies your pull request will be accepted!

@@ -59,9 +59,10 @@ You can contribute to this Project as follows:
 ### :page_with_curl: When will Pull Request be accepted ?
 - You should contribute at least 2 code-files/journals/blogs etc.
 - Points that will be considered while validation :
-  1. If contributing a code file you should mention proper problem statement at the start of your file (Comment it)
-  2. Code should not be directly copied from any website like geeksforgeeks, tutorialspoint etc as there will be a plagiarism check for the same.
-  3. Your work should be placed in an appropriate folder and should not change the rest of the directory structure. 
+  1. If contributing a code file you should mention proper problem statement at the start of your file (Comment it).
+  2. You can create any folder as per need, for example if there is need of subject folder and it not available you can add it with respective structure shown above.
+  3. Code should not be directly copied from any website like geeksforgeeks, tutorialspoint etc as there will be a plagiarism check for the same.
+  4. Your work should be placed in an appropriate folder and should not change the rest of the directory structure. 
 - Once all the above factors are verified by our Gyaanibuddies your pull request will be accepted!
 
 ### Where can you find us ?

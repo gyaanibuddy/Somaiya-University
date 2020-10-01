@@ -6,6 +6,6 @@ Email: mayankchowdhary607@gmail.com
 
 Name: [Tushar Bapecha](https://github.com/tushargithub44)<br/>
 Place: India<br/>
-About: Third Year CSE Undergrad at KJSCE<br/>
+About: Co-Founder of GyaaniBuddy <br/>
 Programming languages: C/C++, Python, Java, HTML, CSS, Js <br/>
 Email: tushar.bapecha@somaiya.edu 

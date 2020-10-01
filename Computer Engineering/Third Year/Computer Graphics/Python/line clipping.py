@@ -1,38 +1,39 @@
-### Drawing line using Bresenham's Line Drawing Algorithm in Computer Graphics.
+### Program to demonstrate line clippling Algorithm in Computer Graphics.
 
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
 
-w, h = 25,25
+w, h = 200,200
 
-def drawbl(x1,y1,x2,y2): 
-    dy = (y2 - y1)
-    dx = (x2 - x1) 
-    m_new = 2 * dy - dx 
-    x = x1
-    y = y1 
-    # m=m+1
-    while(x<=x2 and y<=y2):
-        if(m_new>=0):
-            # if(m<=1):
-            print(x,y)
-            a = x
-            b = y
+def drawbl(x1,y1,r): 
+    x = 0
+    y = r
+    d = 3 - 2*r
+    while(x <= y):
+        a = x
+        b = y
+        if (d<0): 
             x=x+1
-            y=y+1
-            m_new=m_new+2*dy-2*dx  
-            Line(a,b,x,y)
-          
-        else:
-            # if(m<=1):
-            print(x,y)
-            a = x
-            b = y
-            m_new=m_new+2*dy
-            x=x+1 
-            Line(a,b,x,y)
-		
+            y = y
+            d = d + 4*x + 6
+        else: 
+            x=x+1
+            y = y - 1
+            d = d + 4*(x - y) + 10
+        # 1st Quadrant
+        Line(a+100,b+100,x+100,y+100)
+        Line(b+100,a+100,y+100,x+100)
+        # 2nd Quadrant
+        Line(-a+100,b+100,-x+100,y+100)
+        Line(-b+100,a+100,-y+100,x+100)
+        # 3rd Quadrant
+        Line(-a+100,-b+100,-x+100,-y+100)
+        Line(-b+100,-a+100,-y+100,-x+100)
+        # 4th Quadrant
+        Line(a+100,-b+100,x+100,-y+100)
+        Line(b+100,-a+100,y+100,-x+100)
+
 # ---Section 1---
 def Line(x1,y1,x2,y2):
     # We have to declare the points in this sequence: bottom left, bottom right, top right, top left
@@ -46,15 +47,15 @@ def Line(x1,y1,x2,y2):
     glEnd()
 
 # ---Section 2---
-def showScreen(a1,b1,a2,b2):
+def showScreen():
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) # Remove everything from screen (i.e. displays all white)
     glLoadIdentity() # Reset all graphic/shape's position
     #Color3f function takes the relative values of given rgb values
     glColor3f(0.0, 0.0, 1.0) # Set the color to blue
     # m=0
     # a1,b1,a2,b2= map(int, input().split())
-    # drawbl(9,18,14,21)
-    drawbl(a1,b1,a2,b2)
+    drawbl(50,50,50)
+    # drawbl(a1,b1,a2,b2)
     glutSwapBuffers()
 
 #---Section 3---
@@ -62,8 +63,8 @@ glutInit()
 glutInitDisplayMode(GLUT_RGBA) # Set the display mode to be colored
 glutInitWindowSize(500, 500)   # Set the w and h of your window
 glutInitWindowPosition(0, 0)   # Set the position at which this windows should appear
-a1,b1,a2,b2= map(float, input().split())
-wind = glutCreateWindow("Bresenham's Line Drawing Algorithm") # Set a window title
-glutDisplayFunc(showScreen(a1,b1,a2,b2))
-glutIdleFunc(showScreen(a1,b1,a2,b2)) # Keeps the window open
+# x,y,r= map(float, input().split())
+wind = glutCreateWindow("Bresenham's Circle Drawing Algorithm") # Set a window title
+glutDisplayFunc(showScreen)
+glutIdleFunc(showScreen) # Keeps the window open
 glutMainLoop()  # Keeps the above created window displaying/running in a loop

@@ -1,5 +1,5 @@
 Name: [Mayank Chowdhary](https://github.com/m607stars)<br/>
-Place: India<br/>
+Place: Mumbai, India<br/>
 About: Mentor at SMLRA-KJSCE<br/>
 Programming languages: Python, Java, C/C++, HTML, CSS, Js <br/>
 Email: mayankchowdhary607@gmail.com

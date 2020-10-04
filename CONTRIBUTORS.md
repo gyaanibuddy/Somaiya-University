@@ -9,3 +9,9 @@ Place: India<br/>
 About: Third Year CSE Undergrad at KJSCE<br/>
 Programming languages: C/C++, Python, Java, HTML, CSS, Js <br/>
 Email: tushar.bapecha@somaiya.edu 
+
+Name: [Rugved Bongale](https://github.com/RugvedB)<br/>
+Place: India<br/>
+About: Third Year CSE Undergrad at KJSCE<br/>
+Programming languages: C/C++, Python, Java, HTML, CSS, Js <br/>
+Email: rugved.bongale@somaiya.edu 

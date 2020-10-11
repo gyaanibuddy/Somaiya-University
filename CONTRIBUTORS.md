@@ -15,3 +15,9 @@ Place: India<br/>
 About: Third Year CSE Undergrad at KJSCE<br/>
 Programming languages: C/C++, Python, Java, HTML, CSS, Js <br/>
 Email: rugved.bongale@somaiya.edu 
+
+Name: [Dhruv Solanki](https://github.com/Dhruvsolanki345)<br/>
+Place: Mumbai, India<br/>
+About: Second Year Information Technology Undergrad at KJSCE<br/>
+Programming languages: C/C++, Javascript, Python, Java, HTML, CSS <br/>
+Email: dhruvsolanki753@gmail.com 

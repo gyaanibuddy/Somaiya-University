@@ -179,7 +179,7 @@ class game_ball():
             for item in row:
                 # check collision 
                 # item[0] : rect present in the individual_block[]
-                if self.rect.colliderect(item[0]): 
+                if self.rect.colliderect(item[0]):  
                     # check if the collision was from above 
                     if abs(self.rect.bottom - item[0].top) < collision_thresh and self.speed_y > 0:
                         self.speed_y *= -1
